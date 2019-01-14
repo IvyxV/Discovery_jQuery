@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <title>Exercice 7</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+  <ul>
+    <li>Html</li>
+    <li>CSS</li>
+    <li class="remove">Javascript</li>
+    <li>PHP</li>
+    <li class="remove">...</li>
+  </ul>
+  <ol>
+    <li class="remove">JQuery</li>
+    <li>Angular JS</li>
+    <li class="remove">Node JS</li>
+    <li>BootStrap</li>
+    <li>Symfony</li>
+    <li class="remove">Laravel</li>
+  </ol>
+  <button>remove</button>
+  <script>
+    $(document).ready(function(){
+      $(".remove").each(function(){
+        $(this).remove();
+      });
+    });
+  </script>
+</body>
+</html>
